@@ -1,0 +1,156 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".Quiz7Activity"
+    android:background = "#FFFFFF"
+>
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+    >
+
+        <!-- TextView to show the current question number -->
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Question 7/8"
+            android:textStyle = "bold"
+            android:textAppearance = "?android:textAppearanceMedium"
+            android:paddingLeft = "20dp"
+        />
+
+        <!-- TextView to show the current score -->
+        <TextView
+            android:id = "@+id/score_text_view"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Score: 0"
+            android:textStyle = "bold"
+            android:textAppearance = "?android:textAppearanceMedium"
+            android:layout_alignParentRight = "true"
+            android:paddingRight = "30dp"
+        />
+
+        <!-- Continue Button leads to Quiz No. 8 -->
+        <Button
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "continue"
+            android:layout_alignParentBottom = "true"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginBottom = "465dp"
+            android:onClick = "goToPageEight"
+        />
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical"
+        >
+            <!-- CardView contains TextView and CheckBox  -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:elevation = "500dp"
+                card_view:cardCornerRadius = "20dp"
+                android:layout_marginTop = "130dp"
+                card_view:cardBackgroundColor="@color/cardview_dark_background"
+            >
+
+                <!-- TextView for Quiz No. 7 -->
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "Which two of the following is Pasta"
+                    android:textAppearance = "?android:textAppearanceLarge"
+                    android:layout_marginTop = "10dp"
+                    android:layout_marginLeft = "15dp"
+                    android:layout_marginRight = "15dp"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                    android:onClick = "pastaCheckBox"
+                />
+
+                <!-- CheckBox for Quiz No. 7 -->
+                <CheckBox
+                    android:id = "@+id/bread_checkbox"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "Bread"
+                    android:textAppearance = "?android:textAppearanceSmall"
+                    android:textAllCaps = "true"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                    android:layout_marginTop = "70dp"
+                    android:onClick = "pastaCheckBox"
+                />
+
+                <!-- CheckBox for Quiz No. 7 -->
+                <CheckBox
+                    android:id = "@+id/potato_checkbox"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "potato ball"
+                    android:textAppearance = "?android:textAppearanceSmall"
+                    android:textAllCaps = "true"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                    android:layout_marginTop = "100dp"
+                    android:onClick = "pastaCheckBox"
+                />
+
+                <!-- CheckBox for Quiz No. 7 -->
+                <CheckBox
+                    android:id = "@+id/spag_checkbox"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "spaghetti"
+                    android:textAppearance = "?android:textAppearanceSmall"
+                    android:textAllCaps = "true"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                    android:layout_marginTop="130dp"
+                    android:onClick = "pastaCheckBox"
+                />
+
+                <!-- CheckBox for Quiz No. 7 -->
+                <CheckBox
+                    android:id = "@+id/shawarma_checkbox"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "Shawarma"
+                    android:textAppearance = "?android:textAppearanceSmall"
+                    android:textAllCaps = "true"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                    android:layout_marginTop="160dp"
+                    android:onClick = "pastaCheckBox"
+                />
+
+                <!-- CheckBox for Quiz No. 7 -->
+                <CheckBox
+                    android:id = "@+id/macaroni_checkbox"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "Macaroni"
+                    android:textAppearance = "?android:textAppearanceSmall"
+                    android:textAllCaps = "true"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginBottom = "10dp"
+                    android:onClick = "pastaCheckBox"
+                />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

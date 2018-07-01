@@ -1,0 +1,108 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".Quiz6Activity"
+    android:background = "#FFFFFF"
+>
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+    >
+
+        <!-- TextView to show the current question number -->
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Question 6/8"
+            android:textStyle = "bold"
+            android:textAppearance = "?android:textAppearanceMedium"
+            android:paddingLeft = "20dp"
+        />
+
+        <!-- TextView to show the current score -->
+        <TextView
+            android:id = "@+id/score_text_view"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Score: 0"
+            android:textStyle = "bold"
+            android:textAppearance = "?android:textAppearanceMedium"
+            android:layout_alignParentRight = "true"
+            android:paddingRight = "30dp"
+        />
+
+        <!-- Continue Button leads to Quiz No. 7 -->
+        <Button
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "continue"
+            android:layout_alignParentBottom = "true"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginBottom = "465dp"
+            android:onClick = "goToPageSeven"
+        />
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical"
+        >
+
+            <!-- Bread Image -->
+            <ImageView
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:src = "@drawable/bread"
+                android:adjustViewBounds = "true"
+                android:layout_marginTop="30dp"
+            />
+
+            <!-- CardView contains TextView and EditText View -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:elevation = "500dp"
+                card_view:cardCornerRadius = "20dp"
+                android:layout_marginTop = "15dp"
+                card_view:cardBackgroundColor="@color/cardview_dark_background"
+            >
+
+                <!-- TextView for Quiz No. 6 -->
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "What ingredient makes bread rise"
+                    android:textAppearance = "?android:textAppearanceLarge"
+                    android:layout_marginTop = "10dp"
+                    android:layout_marginLeft = "15dp"
+                    android:layout_marginRight = "15dp"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                />
+
+                <EditText
+                    android:id = "@+id/edit_text_answer"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:hint = "  Type Your Answer Here"
+                    android:textColorHint="#FF9800"
+                    android:inputType = "textCapWords"
+                    android:layout_marginTop = "100dp"
+                    android:textColor = "#FF9800"
+                    android:layout_marginBottom = "10dp"
+                    android:maxLength = "5"
+                    android:onClick = "setText"
+                />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

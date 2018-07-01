@@ -1,0 +1,130 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".Quiz1Activity"
+    android:background = "#FFFFFF"
+>
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+    >
+
+        <!-- TextView to show the current question number -->
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Question 1/8"
+            android:textStyle = "bold"
+            android:textAppearance = "?android:textAppearanceMedium"
+            android:paddingLeft = "20dp"
+        />
+
+        <!-- TextView to show the current score -->
+        <TextView
+            android:id = "@+id/score_text_view"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Score: 0"
+            android:textStyle = "bold"
+            android:textAppearance = "?android:textAppearanceMedium"
+            android:layout_alignParentRight = "true"
+            android:paddingRight = "30dp"
+        />
+
+        <!-- Continue Button leads to Quiz No. 2 -->
+        <Button
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "continue"
+            android:layout_alignParentBottom = "true"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginBottom = "465dp"
+            android:onClick = "goToPageTwo"
+        />
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "vertical"
+        >
+
+            <!-- Watermelon Image -->
+            <ImageView
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:src = "@drawable/watermelon"
+                android:adjustViewBounds = "true"
+                android:layout_marginTop="30dp"
+            />
+
+            <!-- CardView contains TextView and RadioGroup View -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:elevation = "500dp"
+                card_view:cardCornerRadius = "20dp"
+                android:layout_marginTop = "15dp"
+                card_view:cardBackgroundColor="@color/cardview_dark_background"
+            >
+
+                <!-- TextView for Quiz No. 1 -->
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "A watermelon is about 55% water by weight."
+                    android:textAppearance = "?android:textAppearanceLarge"
+                    android:layout_marginTop = "10dp"
+                    android:layout_marginLeft = "15dp"
+                    android:layout_marginRight = "15dp"
+                    android:textStyle = "bold"
+                    android:textColor = "#FF9800"
+                />
+
+                <!-- RadioGroup creates TRUE/FALSE radio buttons -->
+                <RadioGroup
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:orientation = "vertical"
+                    android:layout_marginTop = "100dp"
+                    android:layout_marginLeft = "15dp"
+                    android:layout_marginBottom ="10dp"
+                >
+
+                    <RadioButton
+                        android:id = "@+id/watermelon_radio_true"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text = "true"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "?android:textAppearanceSmall"
+                        android:textStyle = "bold"
+                        android:textColor = "#FF9800"
+                        android:onClick = "getTrueForQuizOne"
+                    />
+
+                    <RadioButton
+                        android:id = "@+id/watermelon_radio_false"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text = "False"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "?android:textAppearanceSmall"
+                        android:textStyle = "bold"
+                        android:textColor = "#FF9800"
+                        android:onClick = "getFalseForQuizOne"
+                    />
+
+                </RadioGroup>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
