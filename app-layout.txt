@@ -1,0 +1,67 @@
+LAYOUT
+.........
+
+• Overall Layout
+	  o App contains 8 questions 
+    o 2 questions with check boxes, 
+		o 5 questions with radio buttons 
+    o 1 text entry question.
+  
+  • Question types
+	  o Questions are in a variety of formats such as free text response, 
+		 checkboxes, and radio buttons.
+	  o Checkboxes are only used for questions with multiple right answers. 
+		Radio buttons are only used for questions with a single right answer (True/False).
+		
+  • Continue button
+      o App includes several button for each activity or question.
+       The user will use it to go to a new question or activity and receive a score.
+  
+  • Layout best practices
+      o The code adheres to all of the following best practices:
+			o Text sizes are defined in sp
+			o Lengths are defined in dp
+			o Padding and margin is used appropriately, such that 
+			  the views are not crammed up against each other.
+        
+  • View variety
+      o The app includes all of the following Views: TextView, ImageView, 
+		    Button, Checkbox, EditText, LinearLayout, RelativeLayout, ScrollView, RadioButton, RadioGroup.
+      o The app uses nested ViewGroups to reduce the complexity of the layout.
+	  
+  • Rotation
+	  o The content is not cut of the device is rotated to landscape mode.
+
+FUNCTIONALITY
+...............
+
+• Runtime Errors
+      o The code runs without errors.
+      
+• Question answers
+      o Each question has a correct answer and some multiple answers.
+      
+• Radio button implementation
+	  o The 5 questions which uses radio buttons allows only one to be checked at once.
+    
+• Control statements
+	  o The app contains one if/else statement
+    
+• Grading button function
+	  o The grading button displays the user's score on the upper right of the app's screen.
+    
+• Grading Logic
+	  o The grading logic checks each answer correctly
+    
+CODE READABILITY
+.................
+
+• Naming conventions	
+      o All variables, methods, and resource IDs are descriptively named such that
+        another developer reading the code can easily understand their function. There are also comments
+        
+• Format
+      o The code is properly formatted i.e. there are no unnecessary blank lines.
+      o There are no unused variables or methods.
+      o There is no commented out code.
+      o The code also has proper indentation when defining variables and methods.
