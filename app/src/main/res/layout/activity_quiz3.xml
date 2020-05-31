@@ -105,8 +105,7 @@
                         android:textStyle = "bold"
                         android:textColor = "#FF9800"
                         android:onClick = "getTrueForQuizThree"
-
-                        />
+                    />
 
                     <RadioButton
                         android:id = "@+id/wine_radio_false"
