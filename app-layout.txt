@@ -33,7 +33,7 @@ LAYOUT
 	  o The content is not cut of the device is rotated to landscape mode.
 
 FUNCTIONALITY
-...............
+..............
 
 • Runtime Errors
       o The code runs without errors.
